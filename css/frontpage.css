@@ -1,0 +1,74 @@
+.frontpage .site-header {
+  padding: 0; }
+  .frontpage .site-header h1 {
+    /* https://webaim.org/techniques/css/invisiblecontent/ */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute; }
+
+.frontpage .site-nav {
+  color: #e3e3e3;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+@media print, screen and (min-width: 64em) {
+  .frontpage .site-nav {
+    padding-right: 5vw; } }
+
+#hero-header {
+  background-color: #181818;
+  color: #e3e3e3;
+  min-height: 98.5vh;
+  padding: 42vh 3rem 20vh;
+  font-size: 1.625rem; }
+  #hero-header p:first-of-type {
+    font-size: inherit;
+    line-height: 1.1538;
+    margin-bottom: 0.25em; }
+  #hero-header p + p {
+    font-size: 0.7692em;
+    line-height: 1.25;
+    margin-bottom: 0.625rem; }
+  #hero-header ul {
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.5769em;
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    #hero-header ul::before {
+      content: "["; }
+    #hero-header ul::after {
+      content: "]"; }
+  #hero-header li {
+    display: inline-block; }
+    #hero-header li:not(:last-of-type)::after {
+      content: ","; }
+  #hero-header abbr {
+    text-decoration: none; }
+    #hero-header abbr::before {
+      content: "'"; }
+    #hero-header abbr::after {
+      content: "'"; }
+  @media print, screen and (min-width: 35.5em) {
+    #hero-header {
+      padding-left: 15vw;
+      padding-right: 15vw; } }
+  @media print, screen and (min-width: 40em) {
+    #hero-header {
+      padding-left: 20vw;
+      padding-right: 20vw; } }
+  @media screen and (min-width: 75em) {
+    #hero-header {
+      font-size: 1.875rem;
+      padding-left: 25vw;
+      padding-right: 25vw; } }
+
+#hero-header + .content {
+  padding-top: 3rem; }
