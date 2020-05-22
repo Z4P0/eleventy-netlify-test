@@ -1,0 +1,52 @@
+extends ../_includes/pug/base.pug
+
+block styles
+  link(rel="stylesheet", href="../../styles/css/frontpage.css")
+
+block container
+  .container.frontpage
+
+    header.site-header
+      //- h1.show-for-sr Luis Rosario
+      h1
+        a(href="index.html") Luis Rosario
+
+      nav.site-nav
+        h2.show-for-sr Site Navigation
+        ul.site-nav-list
+          li
+            a(href="base.html") About
+          li
+            a(href="base.html") Workshop
+
+    main#main.main
+      header#hero-header
+        p
+          strong Luis Rosario
+        p Web Developer
+        ul
+          li
+            abbr(title="Hyper-Text Markup Language") HTML
+          li
+            abbr(title="Cascading Style Sheets") CSS
+          li
+            abbr(title="JavaScript") JS
+          li
+            abbr(title="User Interface") UI
+          li
+            abbr(title="User Experience") UX
+
+      .content
+        p Born in Mexico, raised in New York State. I help make sure websites at the University of Rochester are accessible, performant, and beautiful.
+
+        //- ul
+          li
+            a(href="https://github.com/Z4P0/") Github
+          li
+            a(href="https://open.spotify.com/user/leftsumo") Spotify
+          li
+            a(href="https://www.last.fm/user/space_monk-e") Last.fm
+
+    footer.site-footer
+      p
+        small &copy; 2020
